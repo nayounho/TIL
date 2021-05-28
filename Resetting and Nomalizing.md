@@ -1,4 +1,4 @@
-# Resetting과 Nomalizingㅇㅢ 차이점
+# Resetting과 Nomalizing의 차이점
 
 ## Resetting: 
 - Resetting은 요소의 모든 기본 브라우저 스타일을 제거
