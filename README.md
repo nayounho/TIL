@@ -13,6 +13,7 @@
 [동기와 비동기](./JS/동기와%20비동기.md) </br>
 [Array, linked List](JS/Array%20Linked%20List.md)</br>
 [RESTful API](JS/RestfulAPI.md)</br>
+[Callback, Promise](JS/Callback%20and%20Promise.md)</br>
 
 ## React
 [useMemo,useCallback](./JS/동기와%20비동기.md)</br>
