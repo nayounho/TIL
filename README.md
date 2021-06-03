@@ -15,6 +15,7 @@
 [RESTful API](JS/RestfulAPI.md)</br>
 [Callback, Promise](JS/Callback%20and%20Promise.md)</br>
 [렌더링 과정](./JS/렌더링%20과정.md)</br>
+[CORS 란](./JS/CORS.md)</br>
 
 ## React
 [useMemo,useCallback](./JS/동기와%20비동기.md)</br>
