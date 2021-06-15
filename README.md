@@ -1,7 +1,7 @@
 # TIL
 
 ## HTML
-[시멘틱 마크업](HTML/시멕틱%20마크업.md)</br>
+[시멘틱 웹이란](./HTML/Semantic%20Web.md)</br>
 [DOCTYPE](HTML/DOCTYPE.md)</br>
 [HTML 마크업](./HTML/HTML%20마크업.md)
 
