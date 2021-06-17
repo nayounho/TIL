@@ -24,6 +24,7 @@
 [데이터 가공 시 많이 사용되는 메서드](./JS/배열%20메서드.md)</br>
 [arguments 객체](./JS/arguments객체.md)</br>
 [This](./JS/This.md)</br>
+[이벤트위임 막는 방법](./JS/이벤트위임%20막는%20방법.md)</br>
 
 ## React
 [useMemo,useCallback](./JS/동기와%20비동기.md)</br>
