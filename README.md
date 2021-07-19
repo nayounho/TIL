@@ -26,6 +26,7 @@
 [This](./JS/This.md)</br>
 [이벤트위임 막는 방법](./JS/이벤트위임%20막는%20방법.md)</br>
 [JS 디자인 패턴 4가지](./JS/Design%20patterns%20with%20JS.md)</br>
+[브라우저 렌더링 과정](./JS/브라우저%20렌더링%20과정.md)</br>
 
 ## React
 [useMemo,useCallback](./JS/동기와%20비동기.md)</br>
