@@ -24,11 +24,11 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 4. Oh My ZSH — ZSH를 더 쉽게 사용해주는 플러그인
 
 - 테마 설정
-- 
+
 <img src="./../Image/vi.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="vi"></img>
 
 - 그림과 같이 명령어 입력 후 설정으로 간다
-- 
+ 
 <img src="./../Image/bira.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="bira"></img>
 
 - 테마를 변경해준다(테마는 oh my zsh를 구글링하면 여러가지 테마를 확인할 수 있다)
@@ -41,3 +41,15 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 - iterm에서 commend + , 누르면 preference에 들어갈 수 있다.
 - 그리고 사진과 같이 이동 후 Unicode normalization form: 에서 none으로 되어 있는 것을 다른 것으로 바꿔준다.
 - 해결!
+
+## code . 명령어로 vscode 열기
+
+- iterm에서 vi ~/.zshrc 입력 후 vim으로 이동
+```
+code () {VSCODE_CWD="$PWD open -n -b "com.microsoft.VSCode" --args $* ;}
+```
+
+<img src="./../Image/vscode%20설정.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="vscode 설정"></img>
+
+- 위의 명령어를 vim에 추가
+- 이제 code . 명령어 실행
