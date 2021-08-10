@@ -40,6 +40,8 @@
   - 초기 진입시 공부할 내용이 많다. (Angular CLI, Typescript, Module, Component, RxJS, Form, Router, Pipe, directive...)
 - 기본 폴더 용량이 많다.
   - 프레임워크답게 기본적으로 앵귤러 프로젝트를 생성하면 기본 폴더 용량이 상당하다.
+  
   <img src="./../Image/Angular%20용량.png" width="200px" height="350px" title="px(픽셀) 크기 설정" alt="Angular"></img>
+
 - 소외감
   - 많은 개발자들이 Angular를 떠나 React나 Vue로 돌아서고 있다. 그 만큼 다른 프레임워크들이 다루기 쉽고 높은 퍼포먼스를 내기 좋다는 뜻일 것이다.
