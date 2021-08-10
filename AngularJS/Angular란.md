@@ -33,3 +33,13 @@
     - Node.js의 nodemon이나 기존 client의 livereload와 비슷하게 생각하면 될 것 같다.
   - 기본적으로 Webpack을 내장하고 있으며 알아서 빌드까지 수행
   - Typescript를 컴파일하고 자바스크립트를 압축하는 것까지 자동으로 해주며, 웹팩에 대한 지식이 전혀 없어도 사용 가능
+
+## Angular의 단점
+
+- 러닝 커브
+  - 초기 진입시 공부할 내용이 많다. (Angular CLI, Typescript, Module, Component, RxJS, Form, Router, Pipe, directive...)
+- 기본 폴더 용량이 많다.
+  - 프레임워크답게 기본적으로 앵귤러 프로젝트를 생성하면 기본 폴더 용량이 상당하다.
+  <img src="./../Image/Angular%20용량.png" width="200px" height="350px" title="px(픽셀) 크기 설정" alt="Angular"></img>
+- 소외감
+  - 많은 개발자들이 Angular를 떠나 React나 Vue로 돌아서고 있다. 그 만큼 다른 프레임워크들이 다루기 쉽고 높은 퍼포먼스를 내기 좋다는 뜻일 것이다.
