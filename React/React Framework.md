@@ -19,6 +19,7 @@
     - DOM은 HTML과 JS를 서로 이어주는 역할
 
     <img src="./../Image/DOM.png" width="500px" height="100px" alt="DOM" />
+
     - 웹 페이지를 이루는 태그들을 js가 이용할 수 있게끔 브라우저가 트리구조로 만든 객체 모델
 
     <img src="./../Image/DOM%20tree.png" width="650px" height="450px" alt="DOM" />
