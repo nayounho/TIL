@@ -39,7 +39,8 @@
 <img src="./../Image/MQTT_QoS.png" width="750px" height="600px" alt="MQTT QoS"></img></br>
 
 - 서비스의 질을 보장해주는 레벨을 말한다.
-- 서비스의 종류에 따라서 적당한 QoS 레벨을 선택해야 한다.
+- QoS가 높아질수록 품질이 향상, 그러나 성능이 저하될 수 있으므로 특성에 따라 결정하는 것이 좋다.
+- QoS 레벨
   - Level 0 (At most Once)
     메시지는 한번만 전달되며 전달의 성공여부는 확인 하지 않는 레벨
   - Level 1 (At least Once)
