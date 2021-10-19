@@ -52,3 +52,4 @@
 [Iterm2 + zsh](./Front-End/iterm설정.md)</br>
 [React vs Vue.js 비교조사](./Front-End/React%20vs%20Vue%20비교%20조사.md)</br>
 [MQTT란](./Front-End/MQTT란.md)</br>
+[CORS에러 해결 방법 (React CRA를 사용하여 개발할 때 axios로 요청)](./Front-End/CORS에러%20해결방법.md)</br>
