@@ -20,7 +20,9 @@
 - npm은 node.js로 만들어진 모듈을 관리하는 툴이니 npm을 사용한다는 것은 곧 모듈을 활용한다는 것
   - 활용하는 방법은 간단히 "npm install 모듈이름" 의 명령어로 가능
   - 예를 들어 webpack를 설치해본다면
-    `npm install --g webpack`
+    ```
+    npm install --g webpack
+    ```
     으로 설치를 하게된다.
   - 이렇게 일일히 설치할 수도 있겠지만 모듈의 의존성을 한꺼번에 관리하는 것이 더 효율적이므로
     json 파일을 만들어 그 안에 기록을 통해서 관리를 한다.
@@ -64,6 +66,6 @@
       `npm install` 배포된 파일을 다운받고 이 명령어를 입력하게 되면 모듈을 한번에 다운받을 수 있게 된다
     - scipts 안의 내용을 실행하기 위해서는 'npm run 이름' 같은 형식으로 실행할 수 있다
       - 예를 들어서 webpack으로 해당 파일을 빌드하기 위해서는 다음과 같이 입력한다
-        ``npm run build`
+        `npm run build`
       - 그리고 http-server를 동작시키기 위해서 아래와 같이 입력한다
         `npm run http-server`
