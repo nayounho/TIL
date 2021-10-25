@@ -52,7 +52,6 @@
 [Iterm2 + zsh](./Front-End/iterm설정.md)</br>
 [React vs Vue.js 비교조사](./Front-End/React%20vs%20Vue%20비교%20조사.md)</br>
 [MQTT란](./Front-End/MQTT란.md)</br>
-[npm 이란](./Front-End/npm%20이란?.md)</br>
 
 ## ERRORS
 
