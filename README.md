@@ -58,3 +58,4 @@
 
 [CORS에러 해결 방법 (React CRA를 사용하여 개발할 때 axios로 요청)](./ERRORS/CORS에러%20해결방법.md)</br>
 [exhaustive-deps-warning](./ERRORS/exhaustive-deps-warning.md)</br>
+[405 Not Allowed Error](./ERRORS/405%20Not%20Allowed%20Error.md)</br>
