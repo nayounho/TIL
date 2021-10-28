@@ -5,7 +5,7 @@
 - 프로젝트 진행 중 CRUD를 구현하는 과정에서 member삭제 기능을 구현하고 있었다
 - 그런데 아래와 같은 에러가 발생한 것이다. 405error는 처음봐서 굉장히 당황스러웠다
 
-  <img src="./../Image/405%20ERROR.png" width="300px" height="150px" alt="405 error"></img></br>
+  <img src="./../Image/405%20ERROR.png" width="500px" height="150px" alt="405 error"></img></br>
 
 - 에러가 나오면 한 번 읽어보고 모르겠다 싶으면 뭐다??
   구글링 시작...
