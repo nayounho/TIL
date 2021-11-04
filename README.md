@@ -42,6 +42,7 @@
 [useRef](./React/useRef.md)</br>
 [가상돔(Virtual DOM)이란](./React/Virtual%20DOM.md)</br>
 [JSX 란](./React/JSX.md)</br>
+[Components and Props](./React/Components%20and%20Props.md)</br>
 
 ## Angular
 
