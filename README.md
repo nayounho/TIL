@@ -62,3 +62,7 @@
 [CORS에러 해결 방법 (React CRA를 사용하여 개발할 때 axios로 요청)](./ERRORS/CORS에러%20해결방법.md)</br>
 [exhaustive-deps-warning](./ERRORS/exhaustive-deps-warning.md)</br>
 [405 Not Allowed Error](./ERRORS/405%20Not%20Allowed%20Error.md)</br>
+
+## TypeScript
+
+[TypeScript를 사용하면서 만난 작은 문제)](./TypeScript/TypeScript를%20사용하면서%20만난%20작은%20문제.md)</br>
