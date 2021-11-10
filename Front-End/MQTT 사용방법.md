@@ -61,7 +61,9 @@
         }, 4000);
         console.log("end of script");
         ```
+
        - subscribe 코드
+  
         ```
         const mqtt = require("mqtt");
         const client = mqtt.connect("mqtt://broker.mqtt-dashboard.com", {
@@ -98,8 +100,10 @@
 
     - 이틀을 삽질했는데 구글 검색에서는 실제 적용되는 코드는 별로 건질게 없었다. 믿을건 docs뿐...
       한가지 건진건 React에 적용된 mqtt subscribe코드를 찾을 수 있었다.
-      <a href="https://www.preciouschicken.com/blog/posts/a-taste-of-mqtt-in-react/"/>
+      <a href="https://www.preciouschicken.com/blog/posts/a-taste-of-mqtt-in-react/">참고 사이트</a>
+
        - React적용 mqtt subscribe 코드
+  
         ```
         import React, {useState} from 'react';
 
