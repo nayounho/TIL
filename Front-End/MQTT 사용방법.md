@@ -62,7 +62,7 @@
         console.log("end of script");
         ```
 
-       - subscribe 코드
+      - subscribe 코드
   
         ```
         const mqtt = require("mqtt");
