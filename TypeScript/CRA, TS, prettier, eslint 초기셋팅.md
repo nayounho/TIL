@@ -2,6 +2,14 @@
 
 ## 설치
 ```npx create-react-app app이름 --template typescript```
+```npm i eslint-plugin-prettier```
+```npm i eslint-config-prettier```
+```npm i eslint-plugin-react```
+```npm i prettier```
+
+
+
+## 셋팅
 
 - 이후 root폴더에 .eslintrc와 .prettierrc 파일 생성 후 밑의 내용을 작성
 
