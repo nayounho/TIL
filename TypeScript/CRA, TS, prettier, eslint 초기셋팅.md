@@ -1,11 +1,11 @@
 # CRA, TS, prettier, eslint 초기셋팅
 
 ## 설치
-```npx create-react-app app이름 --template typescript```
-```npm i eslint-plugin-prettier```
-```npm i eslint-config-prettier```
-```npm i eslint-plugin-react```
-```npm i prettier```
+```npx create-react-app app이름 --template typescript```</br>
+```npm i eslint-plugin-prettier```</br>
+```npm i eslint-config-prettier```</br>
+```npm i eslint-plugin-react```</br>
+```npm i prettier```</br>
 
 
 
