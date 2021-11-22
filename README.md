@@ -69,3 +69,4 @@
 ## TypeScript
 
 [TypeScript를 사용하면서 만난 작은 문제)](./TypeScript/TypeScript를%20사용하면서%20만난%20작은%20문제.md)</br>
+[CRA, TS, prettier, eslint 초기셋팅](./TypeScript/CRA,%20TS,%20prettier,%20eslint%20초기셋팅.md)</br>
