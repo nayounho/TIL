@@ -12,7 +12,7 @@
 
 ## CSR(Client Side Rendering)
 
-<img src="./../Image/csr.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Semantic Web"></img>
+<img src="./../Image/csr.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Client Side Rendering"></img>
 
 - CSR은 SPA에서 쓰이는 기법으로, 서버에서 화면을 구성했던 SSR 방식과 달리 클라이언트에서 화면을 구성한다.
 - SPA의 경우 첫 화면에 들어가게 되면, 그림의 1번처럼 데이터를 제외한 화면을 그리는 코드들이 프론트 서버에서 다운받아 진다.
