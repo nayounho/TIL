@@ -97,3 +97,5 @@
       - 리눅스는 기본적으로 `enforce, permissive, disable` 이렇게 3가지 모드가 있는데 default값으로 `enforce`값이 적용되어 있다.
         이 값을 `permissive`값으로 변경해주면 정책에 어긋나는 동작은 감사 로그를 남기고 허용해준다. 이렇게 일시적으로 허용하게 해주면 
         접근이 가능하게 되어 서버에 올라갔는지 확인이 가능해진다
+        `sudo setenforce permissive` -> permissive 모드로 변경
+        `sudo setenforce enforcing` -> enforcing 모드로 변경
