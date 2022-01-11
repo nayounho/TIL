@@ -87,7 +87,7 @@
    
    3. build 폴더 권한 확인 및 수정
   
-      - <img src="./../Image/apache%20build폴더%20권한%20확인.png" width="80px" height="80px" alt="apache buil폴더 권한 확인"></img></br>
+      - <img src="./../Image/apache%20build폴더%20권한%20확인.png" width="400px" height="150px" alt="apache buil폴더 권한 확인"></img></br>
   
       - 위에서 설명한 바와 같이 conf설정과 맞춰 주어야 하는데 변경할 경우 아래의 명령어로 변경한다.
       - `sudo chown -R younho ./younho` -> younho 디렉토리의 하위에 있는 파일 전체의 권한을 younho로 바꾼다는 의미
