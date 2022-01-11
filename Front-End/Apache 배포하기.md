@@ -6,30 +6,31 @@
 
 ## 배포 순서
 1. React로 개발된 Root 폴더에서 `npm rum build` 명령어를 이용하여 파일을 build 시킨다.
-  - `npm run build` 명령어를 입력하면 Root폴더에 build라는 폴더가 생긴다.
-  - build 폴더는 나중에 서버pc에 옮겨야 하기 때문에 잘 확인하자
-  - 클라이언트 단에서 도메인을 입력하면 서버pc에서는 결국 이렇게 build된 파일을 전달하기 때문에 용량을 
-    최대한 줄여줄 필요가 있다.
+     - `npm run build` 명령어를 입력하면 Root폴더에 build라는 폴더가 생긴다.
+     - build 폴더는 나중에 서버pc에 옮겨야 하기 때문에 잘 확인하자
+     - 클라이언트 단에서 도메인을 입력하면 서버pc에서는 결국 이렇게 build된 파일을 전달하기 때문에 용량을 
+       최대한 줄여줄 필요가 있다.
 
 2. 터미널에서 원격으로 서버pc 접속 (예: `ssh younho@00.00.00.000`)
-  - 서버pc에서 user를 생성해 주거나 user가 따로 없다면 Root폴더로 바로 이동
-  - `[younho@localhost ~]$` 이런식으로 터미널이 바뀌면 원격으로 접속이 된 것이다.
+     - 서버pc에서 user를 생성해 주거나 user가 따로 없다면 Root폴더로 바로 이동
+     - `[younho@localhost ~]$` 이런식으로 터미널이 바뀌면 원격으로 접속이 된 것이다.
 
 3. centOS7에 Apache 설치
-  - `sudo yum install httpd` 명령어로 설치
-  - y를 눌러주면 설치 시작
-  - 설치 후 `sudo systemctl start httpd` 명령어로 서버를 시작한다.
-  - `sudo systemctl status httpd` 명령어로 서버가 돌아가는지(active / running)확인
-  - 서버를 재실행 하고 싶다면 `sudo systemctl restart httpd`
+     - `sudo yum install httpd` 명령어로 설치
+     - y를 눌러주면 설치 시작
+     - 설치 후 `sudo systemctl start httpd` 명령어로 서버를 시작한다.
+     - `sudo systemctl status httpd` 명령어로 서버가 돌아가는지(active / running)확인
+     - 서버를 재실행 하고 싶다면 `sudo systemctl restart httpd`
 
 4. 포트 열어주기
-  - `sudo yum install firewalld` 명령어로 방화벽 설치
-  - Apache가 사용하는 80포트로 접속하려면 해당 포트를 열어 주어야 한다. (CentOS 7.0 이상)
-   - sudo firewall-cmd --zone=public --permanent --add-port=80/tcp //80포트 개방
-   - sudo firewall-cmd --reload // 방화벽 리로드
-   - sudo firewall-cmd --zone=public --list-all //열린 포트 확인
+     - `sudo yum install firewalld` 명령어로 방화벽 설치
+     - Apache가 사용하는 80포트로 접속하려면 해당 포트를 열어 주어야 한다. (CentOS 7.0 이상)
+        - sudo firewall-cmd --zone=public --permanent --add-port=80/tcp //80포트 개방
+        - sudo firewall-cmd --reload // 방화벽 리로드
+        - sudo firewall-cmd --zone=public --list-all //열린 포트 확인
   
 5. FileZilla 다운로드 및 연결
+
  <img src="./../Image/filezilla%20다운.png" width="600px" height="400px" alt="filezilla down"></img></br>
 
   - local에 있는 build 폴더를 서버pc로 옮겨준다.
@@ -41,7 +42,7 @@
    
       <img src="./../Image/filezilla%20연결%20성공.png" width="200px" height="100px" alt="filezilla 연결 성공"></img>
 
-      3. 아래 이미지를 보면 좌측은 local의 디렉토리이고 우측은 서버pc의 디렉토리이다. 드래그로 파일을 
+      1. 아래 이미지를 보면 좌측은 local의 디렉토리이고 우측은 서버pc의 디렉토리이다. 드래그로 파일을 
          옯기면 된다.
 
       <img src="./../Image/filezilla%20파일%20전송.png" width="750px" height="600px" alt="filezilla 파일 전송"></img></br>
@@ -49,24 +50,28 @@
   - 서버pc에 원격으로 접속하여 확인해보면 드래그한 위치에 build 폴더가 있을 것이다.
 
 6. 서버pc의 Root 폴더 찾기
-  - Root 폴더는 보통 `/var/www/html`에 위치한다. 
-  - 확인 방법은 `cd /var/www/html` 명령어를 통하여 Root폴더로 이동 후 index.html 파일을 만들고 
-    `sudo vi index.html`명령어로 파일에 들어간 후 간단한 글을 쓰고 저장(`: -> wq`)한다. 그리고 
-    서버pc의 도메인을 들어가 보면 내가 작성한 글이 보인다. 그럼 성공!
+     - Root 폴더는 보통 `/var/www/html`에 위치한다. 
+     - 확인 방법은 `cd /var/www/html` 명령어를 통하여 Root폴더로 이동 후 index.html 파일을 만들고 
+       `sudo vi index.html`명령어로 파일에 들어간 후 간단한 글을 쓰고 저장(`: -> wq`)한다. 그리고 
+       서버pc의 도메인을 들어가 보면 내가 작성한 글이 보인다. 그럼 성공!
 
 7. build 폴더를 서버pc의 Root폴더로 이동
       - 폴더 이동 명령어는 `sudo cp -r 이동폴더이름 /var/www/html` 이다.
   
 8. Apache 설정 변경
-  -  `sudo vi /etc/httpd/conf/httpd.conf` 명령어를 통하여 설정파일로 이동
-      <img src="./../Image/apache%20conf%20파일.png" width="650px" height="550px" alt="apache 설정 파일"></img></br>
-  - 설정 창을 내리다 보면 Directory 관련 부분이 나온다. 아래 이미지처럼 수정을 하면 되는데
-    기본적으로 `/var/www/html` 로 설정 되어 있다. build 폴더는 `/var/www/html/build`에 
-    위치해 있기 때문에 이렇게 설정을 해주는 것이다.
-  -  두 번째 Directory 설정에서 `Require all granted`를 추가하여 요청을 허용해주어야 한다.
-      <img src="./../Image/apache%20conf%20파일%20설정%20수정.png" width="650px" height="550px" alt="apache 설정 수정"></img></br>
+     -  `sudo vi /etc/httpd/conf/httpd.conf` 명령어를 통하여 설정파일로 이동
+
+         <img src="./../Image/apache%20conf%20파일.png" width="650px" height="550px" alt="apache 설정 파일"></img></br>
+
+     - 설정 창을 내리다 보면 Directory 관련 부분이 나온다. 아래 이미지처럼 수정을 하면 되는데
+       기본적으로 `/var/www/html` 로 설정 되어 있다. build 폴더는 `/var/www/html/build`에 
+       위치해 있기 때문에 이렇게 설정을 해주는 것이다.
+     -  두 번째 Directory 설정에서 `Require all granted`를 추가하여 요청을 허용해주어야 한다.
+
+         <img src="./../Image/apache%20conf%20파일%20설정%20수정.png" width="650px" height="550px" alt="apache 설정 수정"></img></br>
 
 9. 접근 권한 에러 해결 방법
+
 <img src="./../Image/apache%20접근권한%20에러.png" width="250px" height="150px" alt="apache 접근권한 에러"></img></br>
    
    1. User / Group 확인 
