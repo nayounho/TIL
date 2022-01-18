@@ -100,6 +100,7 @@
         `sudo setenforce permissive` -> permissive 모드로 변경
         `sudo setenforce enforcing` -> enforcing 모드로 변경
 
+
 10. 루트 url이 아닌 특정 url에서 새로고침을 하면 404페이지가 뜨는 오류 원인 및 해결
    1. 원인: 
       - index.js가 연결되어야만 배포가 가능
