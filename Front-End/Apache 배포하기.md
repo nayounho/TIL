@@ -99,3 +99,24 @@
         접근이 가능하게 되어 서버에 올라갔는지 확인이 가능해진다
         `sudo setenforce permissive` -> permissive 모드로 변경
         `sudo setenforce enforcing` -> enforcing 모드로 변경
+
+10. 루트 url이 아닌 특정 url에서 새로고침을 하면 404페이지가 뜨는 오류 원인 및 해결
+   1. 원인: 
+      - index.js가 연결되어야만 배포가 가능
+      - React Router를 사용하여 url를 관리하고 있었는데 루트 url 즉 BASE가 되는 url의 경우에는 index.js를 연결시켜
+        배포하기 때문에 새로고침을 해도 index.js가 배포되지만 다른 특정 url에서 새로고침을 하면 해당 url에 맞는 js파일을 
+        찾으려고 하기 때문에 오류 발생
+
+   2. 해결 방법
+      - `sudo vi /etc/httpd/conf/httpd.conf` 이동
+      - apache httpd.conf에서 설정 추가
+         ```
+         RewriteEngine on
+         # Don't rewrite files or directories
+         RewriteCond %{REQEUST_FILENAME} -f [OR]
+         RewriteCond %{REQEUST_FILENAME} -d
+         RewriteRule ^ - [L]
+         # Rewrite everything else to index.html to allow html5 state links
+         RewriteRule ^ index.html [L]
+         ```
+        <img src="./../Image/apache%20rewrite%20에러%20해결.png" width="600px" height="400px" alt="apache rewrite 에러 해결"></img></br>
