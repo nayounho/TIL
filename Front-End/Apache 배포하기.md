@@ -101,14 +101,14 @@
         `sudo setenforce enforcing` -> enforcing 모드로 변경
 
 
-10. 루트 url이 아닌 특정 url에서 새로고침을 하면 404페이지가 뜨는 오류 원인 및 해결
-   1. 원인: 
+ 10.  루트 url이 아닌 특정 url에서 새로고침을 하면 404페이지가 뜨는 오류 원인 및 해결
+   5. 원인: 
       - index.js가 연결되어야만 배포가 가능
       - React Router를 사용하여 url를 관리하고 있었는데 루트 url 즉 BASE가 되는 url의 경우에는 index.js를 연결시켜
         배포하기 때문에 새로고침을 해도 index.js가 배포되지만 다른 특정 url에서 새로고침을 하면 해당 url에 맞는 js파일을 
         찾으려고 하기 때문에 오류 발생
 
-   2. 해결 방법
+   6. 해결 방법
       - `sudo vi /etc/httpd/conf/httpd.conf` 이동
       - apache httpd.conf에서 설정 추가
          ```
