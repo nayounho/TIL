@@ -61,14 +61,14 @@
  ### 8. Apache 설정 변경
      -  `sudo vi /etc/httpd/conf/httpd.conf` 명령어를 통하여 설정파일로 이동
 
-         <img src="./../Image/apache%20conf%20파일.png" width="650px" height="550px" alt="apache 설정 파일"></img></br>
+   <img src="./../Image/apache%20conf%20파일.png" width="650px" height="550px" alt="apache 설정 파일"></img></br>
 
      - 설정 창을 내리다 보면 Directory 관련 부분이 나온다. 아래 이미지처럼 수정을 하면 되는데
        기본적으로 `/var/www/html` 로 설정 되어 있다. build 폴더는 `/var/www/html/build`에 
        위치해 있기 때문에 이렇게 설정을 해주는 것이다.
      -  두 번째 Directory 설정에서 `Require all granted`를 추가하여 요청을 허용해주어야 한다.
 
-         <img src="./../Image/apache%20conf%20파일%20설정%20수정.png" width="650px" height="550px" alt="apache 설정 수정"></img></br>
+   <img src="./../Image/apache%20conf%20파일%20설정%20수정.png" width="650px" height="550px" alt="apache 설정 수정"></img></br>
 
  ### 9. 접근 권한 에러 해결 방법
 
