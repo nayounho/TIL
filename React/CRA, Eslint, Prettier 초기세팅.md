@@ -6,7 +6,10 @@
 
 ## 2. ESLint와 Prettier 설치
 
-2-1. 패키지 설치 1. npm 패키지로 설치하는 것이 제일 편하다 2. CRA에는 eslint가 내장되어 있기 때문에 eslint 추가 설정을 위한 패키지만 설치
+2-1. 패키지 설치
+
+- npm 패키지로 설치하는 것이 제일 편하다
+- CRA에는 eslint가 내장되어 있기 때문에 eslint 추가 설정을 위한 패키지만 설치
 
 `npm install -D prettier eslint-config-prettier eslint-plugin-prettier`
 
