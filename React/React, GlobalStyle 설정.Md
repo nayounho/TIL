@@ -11,7 +11,7 @@
 
 ## 2. GlobalStyles.js 파일 생성
 
-- styled-components는 local로 동작하기 때문에 GlobalStyles.js 파일을 생성해서 Global Style을 관리한다.
+- styled-components는 local로 동작하기 때문에 GlobalStyle.js 파일을 생성해서 Global Style을 관리한다.
 
 scr/styles/GlobalStyle.js
 
