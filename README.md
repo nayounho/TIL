@@ -75,6 +75,7 @@
 
 [TypeScript를 사용하면서 만난 작은 문제)](./TypeScript/TypeScript를%20사용하면서%20만난%20작은%20문제.md)</br>
 [CRA, TS, prettier, eslint 초기셋팅](./TypeScript/CRA,%20TS,%20prettier,%20eslint%20초기셋팅.md)</br>
+[TypeScript 기본 적용 방법](./TypeScript/TypeScript%20%EA%B8%B0%EB%B3%B8%20%EC%A0%81%EC%9A%A9%20%EB%B0%A9%EB%B2%95.md)</br>
 
 ## Styled-Components
 
