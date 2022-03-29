@@ -50,11 +50,6 @@ export default Circle;
 
 import styled from 'styled-components';
 
-interface ContainerProps<ContainerProps> {
-  bgColor: string;
-  borderColor: string;
-}
-
 interface CircleProps {
   bgColor: string;
   borderColor?: string; //Tip:  Optional Props
@@ -62,8 +57,16 @@ interface CircleProps {
                  // 타입을 지정해 주지 않으면 에러가 발생한다
 }
 
-cosnt Circle = ({borderColor, bgColor, text='Default Circle'}: CircleProps} => {
-  const Container = styled.div`
+export default cosnt Circle =
+  ({borderColor, bgColor, text='Default Circle'}: CircleProps} => {
+    return (
+      <Container bgColor={bgColor} borderColor={borderColor ?? bgColor}> //borderColor가 props로 전달 되지 않았다면 bgColor로 하겠다는 뜻
+        {text}
+      </Container>
+    )
+  }
+
+const Container = styled.div<CircleProps>`
   width: 200px;
   +height: 200px;
   background-color: ${(props) => props.bgColor};
@@ -72,13 +75,5 @@ cosnt Circle = ({borderColor, bgColor, text='Default Circle'}: CircleProps} => {
   display: flex;
   justify-content: center;
   align-items: center;
-  `
-  return (
-    <Container bgColor={bgColor} borderColor={borderColor ?? bgColor}> //borderColor가 props로 전달 되지 않았다면 bgColor로 하겠다는 뜻
-      {text}
-    </Container>
-  )
-}
-
-export default Circle;
+`
 ```
