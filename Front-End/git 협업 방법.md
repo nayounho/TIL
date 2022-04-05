@@ -33,7 +33,7 @@ pull request -> (main 레포지토리에서) request 확인 후 결합
 
    - 작업 완료 후 fork로 복제해 온 내 github에 commit / push를 진행하는 과정이다
 
-6. `git pull pmorigin`
+6. `git pull pmorigin main(master)`
 
    - main 레포지토리에 변경사항이 있을 수 있으니 pull를 받아서 확인하는 과정이다
 
