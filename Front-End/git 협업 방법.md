@@ -85,3 +85,12 @@ pull request -> (main 레포지토리에서) request 확인 후 결합
       2. conversation 확인 후 통과 (Reviewer가 comment를 남기거나 수정할 부분을 알려주면 확인 후 수정)
       3. 해당 코드 Eslint 검사 후 통과 (향후 CI에서 어떤 부분을 검사하느냐에 따라 검사 내용이 달라진다)
       4. 위의 3개가 통과 되면 전체 완료 후 merge
+
+## 4. conflict 해결 (bitbucket)
+
+<img src="./../Image/bitbucket%20conflict.png" width="1200px" height="400px" alt="conflict"></img>
+
+1. Review가 완료되면 merge를 할 수 있는데 merge전에 conflict이 발생하면 해결해야 한다.
+2. terminal에서 `git pull origin 'branch이름(push했던 branch)'`명령어로 local로 소스를 가져온다.
+3. conflict이 발생한 코드를 수정하고 `git add && git commit && git push`를 진행
+4. 위의 과정이 완료되면 bitbucket에서 merge 진행
