@@ -2,9 +2,9 @@
 
 ## 1. 인터페이스
 
-| **기능**      | **Type** | **Url**            | **Request**                       | **Response** |
-| ------------- | -------- | ------------------ | --------------------------------- | ------------ |
-| 동영상 업로드 | POST     | /test-video-upload | # 동영상, Content-type, key: file | response     |
+| **기능**      | **Type** | **Url**            | **Request**                           | **Response** |
+| ------------- | -------- | ------------------ | ------------------------------------- | ------------ |
+| 동영상 업로드 | POST     | /test-video-upload | # 동영상 \n Content-type \n key: file | response     |
 
 ## 2. Api 요청 코드 (axios)
 
