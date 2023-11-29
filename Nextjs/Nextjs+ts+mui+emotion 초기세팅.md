@@ -82,7 +82,7 @@ export default createEmotionCache;
 
 4. `pages/_app.tsx` 수정
 
-- <ThemeProvider/> 및 <CSSBaseline/> 컴포넌트를 렌더링할 수 있도록 `_app.tsx`를 수정한다.
+- `<ThemeProvider/>` 및 `<CSSBaseline/>` 컴포넌트를 렌더링할 수 있도록 `_app.tsx`를 수정한다.
 
 ```
 // theme/defaultTheme.tsx
@@ -258,6 +258,9 @@ module.exports = nextConfig;
 
 7. 참고
 
-- https://reacthustle.com/blog/how-to-setup-mui-with-nextjs-emotion-and-typescript?expand_article=1
-- https://velog.io/@dusunax/next.js-google-font-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0feat.-tailwind
-- https://mui.com/material-ui/guides/next-js-app-router/
+- nextjs + ts + mui + emotion 셋업
+  - https://reacthustle.com/blog/how-to-setup-mui-with-nextjs-emotion-and-typescript?expand_article=1
+- google fonts 사용 이유 및 방법
+  - https://velog.io/@dusunax/next.js-google-font-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0feat.-tailwind
+- MUI 공식 홈페이지에서 제공하는 nextjs 적용 방법
+  - https://mui.com/material-ui/guides/next-js-app-router/
