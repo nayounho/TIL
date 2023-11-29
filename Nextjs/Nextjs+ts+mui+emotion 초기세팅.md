@@ -20,6 +20,7 @@ npm i @mui/material @emotion/react @emotion/styled @emotion/server
 - 설치시 유의사항으로는 nextjs 프레임워크 설치시 질문 중 "Would you like to use App Router?(recommended)" 라는 질문을 하는데 프레임워크 추천이라고 되어 있어 yes라고 하게되면 'app/pages.tsx' 이런식으로 폴더 구조가 만들어 진다. 이 폴더 구조가 좋다면 yes로 하는게 맞지만 본인이 'pages/index.tsx' 구조가 편하다면 no라고 대답하는 것이 좋다.
 
 ```
+/tsconfig.json
 {
   "compilerOptions": {
     "target": "es5",
@@ -44,6 +45,8 @@ npm i @mui/material @emotion/react @emotion/styled @emotion/server
   "exclude": ["node_modules"]
 }
 ```
+
+- config.json 수정
 
 3. emotionCache factory 생성
 
