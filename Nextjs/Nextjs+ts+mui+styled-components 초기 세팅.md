@@ -219,7 +219,44 @@ export default class MyCocument extends Document {
 
 ```
 
-7. 참고
+7. pakage.json
+
+```
+// pakage.json
+{
+  "name": "test-nextjs-styled-components",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.19",
+    "@mui/styles": "^5.14.19",
+    "babel-plugin-styled-components": "^2.1.4",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "styled-components": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "typescript": "^5"
+  }
+}
+```
+
+8. 참고
 
 - nextjs + ts + mui 셋업
   - https://kyounghwan01.github.io/blog/React/next/mui/#app-tsx
