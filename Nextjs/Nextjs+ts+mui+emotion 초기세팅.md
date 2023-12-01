@@ -1,7 +1,5 @@
 # Nextjs + TS + Mui + Emotion 초기 세팅
 
-## 설치하기
-
 1. create-next-app
 
 ```

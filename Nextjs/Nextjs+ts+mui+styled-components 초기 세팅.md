@@ -1,7 +1,5 @@
 # Nextjs + TS + Mui + Styled-components 초기 세팅
 
-## 설치하기
-
 1. create-next-app
 
 ```
@@ -101,33 +99,7 @@ export default class MyCocument extends Document {
 }
 ```
 
-4. theme 적용해보기
-
-```
-// _app.tsx
-import "@/styles/globals.css";
-import theme from "@/styles/theme";
-import type { AppProps } from "next/app";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-
-export default function App({ Component, pageProps }: AppProps) {
-  const GlobalStyle = createGlobalStyle`
-    body {
-      margin: 0;
-      background-color: tomato;
-    }
-  `;
-
-  return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Component {...pageProps} />;
-    </ThemeProvider>
-  );
-}
-```
-
-5. styled-components 설치 및 적용
+4. styled-components 설치 및 적용
 
 ```
 // styled-components 설치
@@ -153,7 +125,7 @@ npm i -D babel-plugin-styled-components
 }
 ```
 
-6. `_document.tsx` 수정
+5. `_document.tsx` 수정
 
 - styled-component 적용을 위해 `_document.tsx`파일을 수정한다.
 
@@ -217,6 +189,32 @@ export default class MyCocument extends Document {
   }
 }
 
+```
+
+6. theme 적용해보기
+
+```
+// _app.tsx
+import "@/styles/globals.css";
+import theme from "@/styles/theme";
+import type { AppProps } from "next/app";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+
+export default function App({ Component, pageProps }: AppProps) {
+  const GlobalStyle = createGlobalStyle`
+    body {
+      margin: 0;
+      background-color: tomato;
+    }
+  `;
+
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Component {...pageProps} />;
+    </ThemeProvider>
+  );
+}
 ```
 
 7. pakage.json
